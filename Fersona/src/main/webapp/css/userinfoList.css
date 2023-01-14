@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+.contain {
+	/* 	
+	flex-direction: column;
+	background: transparent; */
+	margin: 8.5vh auto;
+	width: 1100px;
+	align-items: center;
+	text-align: center;
+
+	/* 반응형으로 가운데정렬 */
+	/* 	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%); */
+}
+
+#tit {
+	color: #293241;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: left;
+}
+
+td {
+	text-align: center;
+	align-items: center;
+	width: 350px;
+}
+
+select {
+	width: 330px;
+	height: 40px;
+	align-items: center;
+	padding-left: 8px;
+	padding-right: 8px;
+	border: 1px solid #a5a5a5;
+}
+
+.numcss {
+	display: inline;
+	width: 330px;
+	height: 40px;
+	align-items: center;
+	padding: 0 8px;
+	border: 1px solid #a5a5a5;
+	width: 330px;
+}
+
+tr {
+	height: 50px;
+}
+
+.table {
+	font-size: 16px;
+	width: 80%;
+	border: 1 0px solid #a5a5a5;
+	color: black;
+}
+
+.text {
+	font-size: 16px;
+	width: 220px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	background-color: #f2f2f2 !important;
+	padding-top: 16px !important;
+}
+
+.radiocss {
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+/* Pagination */
+.pagination a, .pagination button {
+	color: #293241;
+}
+
+#link.active .page-link {
+	background-color: #293241;
+	border-color: #293241;
+}
+
+/* 수정하기 */
+.List_btn {
+	border: none;
+	position: relative;
+	width: 94px;
+	padding: 10px;
+	font-weight: 600;
+	color: bold;
+	transition: all 0.2s;
+	background: #d8d5d5;
+	position: relative;
+}
+/* 등록하기 */
+.contain_btn {
+	position: relative;
+	width: 140px;
+	padding: 10px;
+	margin: 5px 5px 5px 5px;
+	font-weight: 600;
+	color: white;
+	transition: all 0.2s;
+	background: #EE964B;
+	margin: 5px 5px 5px 5px;
+	font-weight: 600;
+}
+/* 공개수배 */
+.wanted {
+	width: 1100px;
+}
+
+.wantedborder {
+	font-size: 14px;
+	border: 1px solid #a5a5a5;
+	width: 212px;
+	display: inline-block;
+}
+
+.face_img_frame {
+	width: 200px;
+	height: 200px;
+	background-color: #a5a5a5;
+	margin: 5px;
+}
+
+.face_img {
+	width: 190px;
+	height: 190px;
+}
+
+.wantedlist_btn {
+	border: none;
+	position: relative;
+	width: 94px;
+	padding: 10px;
+	font-weight: bold;
+	color: white;
+	transition: all 0.2s;
+	background: #a5a5a5;
+}
+
+#dele{
+	align-items: left;
+	text-align: left;
+}
+
+.wantedlist {
+	border: none;
+	position: relative;
+	width: 94px;
+	padding: 10px;
+	font-weight: 600;
+	color: white;
+	transition: all 0.2s;
+	background: #a5a5a5;
+	font-size: 14px;
+}
+
+/* .wantedlist_btn:active {
+	background-color: red;
+} */
+.contain_main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wantedborder tr {
+	height: 20px;
+}
+
+.wantedborder td {
+	text-align: left;
+	font-weight: bold;
+}
+
+.wantedborder td:first-child {
+	padding-left: 7px;
+}
+
+.wantedborder p {
+	display: inline;
+	font-weight: normal;
+}
+
+.wantedborder button {
+	margin: 6px 0px;
+}
+
+td>select {
+	padding-right: 0px;
+	width: 162px;
+}
+
+/* 초기화/ 검색 버튼 */
+#search_margin {
+	margin-bottom: 50px;
+}
+
+.resetbar_btn {
+	justify-content: center;
+	position: relative;
+	width: 240px;;
+	padding: 10px;
+	margin: 5px 5px 5px 0px;
+	font-weight: 600;
+	text-align: center;
+	color: black;
+	transition: all 0.2s;
+	background: white;
+	border: 1px solid #a5a5a5;
+}
+
+.facecreate_btn {
+	justify-content: center;
+	position: relative;
+	width: 240px;
+	padding: 10px;
+	margin: 5px 0px 5px 0px;
+	font-weight: 600;
+	text-align: center;
+	color: #FFF;
+	transition: all 0.2s;
+	background: #ee964b;
+	border: none;
+}
+
+caption {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+/* 리스트 */
+#totalLeft {
+	font-size: 12px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	text-align: left;
+	margin-top: 30px;
+}
+
+.table {
+	font-size: 14px;
+	width: 80%;
+	border: 1 0px solid #a5a5a5;
+}
+
+.tableHt {
+	height: 40px;
+}
+
+#th {
+	background-color: #FDFAE8;
+}
+
+.table00{
+	width : 10%;
+}
+.table01{
+	width : 12%;
+}
+.table02{
+	width : 12%;
+}
+.table03{
+	width : 18%;
+}
+.table04{
+	width : 18%;
+}
+.table05{
+	width : 20%;
+}
+.table06{
+	width :10%;
+}
+
+/* Pagination */
+.pagination a, .pagination button {
+	color: #293241;
+}
+
+#link.active .page-link {
+	background-color: #293241;
+	border-color: #293241;
+}

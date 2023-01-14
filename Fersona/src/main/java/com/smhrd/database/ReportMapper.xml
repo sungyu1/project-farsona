@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.smhrd.model.ReportDAO">
+
+	<!-- 신고 정보 조회 -->
+	<select id="selectAllReport" resultType="com.smhrd.model.Report">
+		select * from
+		report_info
+	</select>
+
+	<select id="selectOne" resultType="com.smhrd.model.Report">
+		select r.num num, r.rep_cate rep_cate, r.rep_con rep_con, r.rep_date
+		rep_date, r.rep_time rep_time, r.mem_id mem_id, r.rep_adr rep_adr,
+		r.mon_id mon_id, r.want_id want_id, r.rep_pro rep_pro,
+		r.rep_wri rep_wri, r.position position, m.mon_img mon_img, m.mon_char mon_char
+		from report_info r
+		left join mon_info
+		m on r.mon_id = m.mon_id where
+		r.num = #{num}
+
+		<!-- select r.num, r.rep_cate, r.rep_con, r.rep_date, r.rep_time, r.mem_id, 
+			r.rep_adr, r.mon_id, r.want_id, r.rep_pro, r.rep_wri, m.mon_img, m.mon_char 
+			from report_info r left join mon_info m on r.mon_id = m.mon_id where r.num 
+			= #{num} -->
+	</select>
+
+	<!-- updatePro 진행상황 수정 -->
+	<update id="update" parameterType="com.smhrd.model.Member">
+		update report_info set
+		rep_pro=#{rep_pro} where num=#{num}
+	</update>
+
+</mapper>

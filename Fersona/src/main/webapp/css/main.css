@@ -1,0 +1,261 @@
+/* main */
+.contain {
+	/* 	
+	flex-direction: column;
+	background: transparent; */
+	margin: 50px auto 18px auto;
+	width: 1200px;
+	align-items: center;
+	text-align: center;
+	/* 반응형으로 가운데정렬 */
+	/* 	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%); */
+}
+
+.headr {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background-color: #FDFAE8;
+}
+
+#headr {
+	width: 100%;
+	height: 100%;
+	background-color: #FDFAE8;
+}
+
+/* 쉽고 빠르고 간편한 몽타주 수사 타이틀 문구 */
+#tit {
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #293241;
+	font-size: 40px;
+	font-weight: 550;
+	text-align: center;
+	margin: 10px 0px 55px 0px;
+}
+
+.main_div {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.main_li {
+	width: 260px;
+	height: 260px;
+	background: #EE964B;
+	margin-right: 8px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.main_li2 {
+	width: 846px;
+	height: 260px;
+	background: #fff;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	border: 1px solid #ececec;
+	padding-top: 7px;
+}
+
+.main_li div {
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.main01 {
+	width: 105px;
+	height: 105px;
+	margin-bottom: 20px;
+	margin-top: 7px;
+	margin-left: 10px;
+}
+
+.main02 {
+	width: 101px;
+	height: 101px;
+	margin-bottom: 20px;
+	margin-top: 7px;
+}
+
+.main03 {
+	width: 103px;
+	height: 103px;
+	margin-bottom: 20px;
+	margin-top: 7px;
+}
+
+.main04 {
+	width: 98px;
+	height: 98px;
+	margin-bottom: 20px;
+	margin-top: 7px;
+}
+
+.headr_span01 {
+	font-size: 24px;
+	font-weight: 500;
+	color: white;
+}
+
+.headr_span02 {
+	font-size: 54px;
+	font-weight: 600;
+	color: white;
+}
+
+.headr_span03 {
+	font-size: 16px;
+	color: white;
+	font-weight: 500;
+}
+
+.today {
+	width: 750px;
+	align-items: center;
+}
+
+.today_01 {
+	background-color: #293241;
+	font-size: 14px;
+	color: #fff;
+	font-weight: 500;
+	margin: 0px auto 18px auto;
+	padding: 4px;
+	width: 120px;
+	align-items: center;
+}
+
+.today_02 {
+	margin: 0px;
+	font-size: 38px;
+	color: #2a2a2a;
+	font-weight: 600;
+}
+
+.today_03 {
+	margin-top: 0px;
+	font-size: 18px;
+	color: #2a2a2a;
+	font-weight: 600;
+}
+
+/* 신고처리현황/사건별신고현황 */
+.con_div {
+	/* margin: 50px 0px; */
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.con_div1 {
+	width: 550px;
+}
+
+.con_div3 {
+	width: 550px;
+	margin-left: 16px;
+}
+
+.tit {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.bg01 {
+	width: 550px;
+	height: 670px;
+	border: 1px solid #ececec;
+	position: relative;
+	padding: 0px 30px 30px 40px;
+	background-color: #fff;
+	margin-bottom: 50px;
+}
+
+.bg02 {
+	width: 550px;
+	height: 670px;
+	border: 1px solid #ececec;
+	position: relative;
+	padding: 0px 30px 30px 30px;
+	background-color: #fff;
+	margin-bottom: 50px;
+}
+
+.chart-div {
+	margin-top: 40px;
+}
+
+.chart-div div {
+	margin: 0px 30px 10px 2.5px;
+	align-items: center;
+}
+
+#fontsize p {
+	font-size: 48px;
+	font-weight: bold;
+	display: inline;
+}
+
+#fontsize {
+	font-size: 20px;
+}
+
+/* 사건별 신고현황 */
+.tit2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 4px;
+	margin-top: 16px;
+}
+
+.bg01 td:first-child {
+	width: 400px;
+}
+
+.padd {
+	padding-top: 26px;
+}
+
+.tit3 {
+	font-size: 24px;
+	margin: 0px 0px 0px 6px;
+	font-weight: bold;
+	color: #808080;
+}
+
+.tit3+span {
+	color: #808080;
+}
+
+.progress-bar {
+	background-color: #EE964B !important;
+}
+
+.Kool__Legend {
+	top: 460px !important;
+	width: 294px !important;
+	height: 30px ! important;
+}
+
+.Kool__ContentPane {
+	font-size: 14px !important;
+	width: 296px !important;
+	height: 32px !important;
+}
+
+.progress {
+	border-radius: 3.25rem !important;
+}

@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.contain {
+	/* 	
+	flex-direction: column;
+	background: transparent; */
+	margin: 7.4vh auto;
+	width: 1000px;
+	align-items: center;
+	text-align: center;
+
+	/* 반응형으로 가운데정렬 */
+	/* 	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%); */
+}
+
+.tit {
+	color: #293241;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: left;
+	width: 1100px;
+}
+
+header {
+	width: 100%;
+	margin: 50px;
+	padding: 50px;
+}
+
+.facespace {
+	display: flex;
+	justify-content: center;
+}
+
+.imgspace label {
+	display: block;
+}
+
+.imgspace {
+	background-color: #ebecf0;
+	width: 500px;
+	height: 500px;
+	border: 1px solid #a5a5a5;
+	align-items: center;
+	justify-content: center;
+}
+
+.imgspace1 {
+	position: relative;
+	top: 150px;
+}
+
+.imgspace2 {
+	width: 180px;
+	position: relative;
+	padding-left: 20px;
+}
+
+.imgspace3 {
+	position: relative;
+	font-weight: bold;
+	padding-top: 20px;
+	font-size: 18px;
+}
+
+.imgspace01 {
+	position: relative;
+	overflow: hidden;
+	width: 249px;
+	height: 249px;
+}
+
+.imgspace01:hover {
+	border: 5px solid #EE964B;
+	box-sizing: border-box;
+}
+
+.imgspace02 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.textspace {
+	width: 500px;
+	height: 500px;
+	font-size: 18px;
+	resize: none;
+	overflow: auto;
+	padding: 10px;
+	border: 1px solid #a5a5a5;
+}
+
+.resetbar {
+	display: flex;
+}
+
+.resetbar_btn {
+	justify-content: center;
+	position: relative;
+	width: 240px;;
+	padding: 10px;
+	margin: 5px 5px 5px 0px;
+	font-weight: 600;
+	text-align: center;
+	color: black;
+	transition: all 0.2s;
+	background: white;
+	border: 1px solid #a5a5a5;
+}
+
+.refacecreate_btn {
+	justify-content: center;
+	position: relative;
+	width: 240px;
+	padding: 10px;
+	margin: 5px 0px 5px 0px;
+	font-weight: 600;
+	text-align: center;
+	color: #FFF;
+	transition: all 0.2s;
+	background: #ee964b;
+	border: none;
+}
+
+.facecreate_btn {
+	justify-content: center;
+	position: relative;
+	width: 240px;
+	padding: 10px;
+	margin: 5px 0px 5px 0px;
+	font-weight: 600;
+	text-align: center;
+	color: #FFF;
+	transition: all 0.2s;
+	background: #ee964b;
+	border: none;
+}
+
+.image_btn1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 240px;;
+	padding: 10px;
+	margin: 10px 0px 10px 0px;
+	font-weight: 600;
+	text-align: center;
+	color: #FFF;
+	float: right;
+	transition: all 0.2s;
+	background: #293241;
+}
+
+.image_btn a {
+	color: #FFF;
+}
+
+.textbar {
+	position: relative;
+}
+
+.upload {
+	width: 70px;
+	top: 440px;
+	left: 10px;
+	/*부모요소 뒤에 사용*/
+	position: absolute;
+	display: none;
+}
+
+.upload1 {
+	/*부모요소 뒤에 사용*/
+	width: 70px;
+	position: absolute;
+	top: 440px;
+	left: 10px;
+	cursor: pointer;
+}
+
+/* 마우스오버시안내문구 */
+.tooltiptext {
+	visibility: hidden;
+	width: 200px;
+	font-size: 16px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	left: 64px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.upload1:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* 유사수배범 조회 */
+#wantedhid {
+	/* 	visibility: hidden;
+	position: absolute; */
+	position: static;
+}
+
+.wanted {
+	position: relative;
+	overflow: hidden;
+}
+
+.face_img_frame {
+	position: relative;
+	overflow: hidden;
+	width: 235px;
+	height: 235px;
+	background-color: #ebecf0;
+	margin: 5px;
+}
+
+.img_frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.wantedborder {
+	font-size: 14px;
+	border: 1px solid #a5a5a5;
+	width: 247px;
+	display: inline-block;
+	padding-bottom: 5px;
+	margin: 3px;
+}
+
+.wantedborder tr {
+	height: 20px;
+}
+
+.wantedborder td {
+	text-align: left;
+	font-weight: bold;
+}
+
+.wantedborder td:first-child {
+	padding-left: 7px;
+}
+
+.wantedborder p {
+	display: inline;
+	font-weight: normal;
+}
+
+.wantedborder button {
+	margin: 6px 0px;
+}
+
+.face_img {
+	width: 380px;
+	height: 380px;
+	margin: 50px 0px 20px 0px;
+	background-color: #ebecf0;
+	border: 5px solid #EE964B;
+	box-sizing: border-box;
+}
+
+[type=radio] {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+[type=radio]+div {
+	cursor: pointer;
+}
+
+[type=radio]:checked+div {
+	border: 5px solid #EE964B;
+	box-sizing: border-box;
+}

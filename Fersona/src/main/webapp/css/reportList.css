@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+.contain {
+	/* 	
+	flex-direction: column;
+	background: transparent; */
+	margin: 8.5vh auto;
+	width: 1100px;
+	align-items: center;
+	text-align: center;
+	/* 반응형으로 가운데정렬 */
+	/* 	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%); */
+}
+
+#tit {
+	color: #293241;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: left;
+}
+
+td {
+	text-align: center;
+}
+
+.text {
+	font-size: 16px;
+	width: 150px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+}
+
+select {
+	width: 220px;
+	height: 40px;
+	align-items: center;
+	padding-left: 8px;
+	padding-right: 8px;
+	border: 1px solid #a5a5a5;
+}
+
+tr {
+	height: 50px;
+}
+
+.search_line {
+	height: 50px;
+	border: 3px solid #293241;
+	text-align: left;
+	position: relative;
+}
+
+.search_text {
+	padding: 0 40px;
+	font-size: 16px;
+	width: 150px;
+	color: black;
+	font-weight: bold;
+	display: inline;
+}
+
+.search {
+	display: inline;
+	border: none;
+	width: 880px;
+	height: 44px;
+}
+
+.search_btn {
+	position: absolute;
+	border: none;
+	top: 8px;
+	right: 10px;
+	background-color: #fff;
+	text-align: right;
+	border: none;
+	background-color: #fff;
+	right: 10px
+}
+
+.search_icon {
+	width: 25px;
+}
+
+#totalLeft {
+	font-size: 12px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	text-align: left;
+	margin-top: 30px;
+}
+
+.table {
+	font-size: 14px;
+	width: 80%;
+	border: 1 0px solid #a5a5a5;
+}
+
+.tableHt {
+	height: 40px;
+}
+
+#th {
+	background-color: #FDFAE8;
+}
+
+/* Pagination */
+.pagination a, .pagination button {
+	color: #293241;
+}
+
+#link.active .page-link {
+	background-color: #293241;
+	border-color: #293241;
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.smhrd.model.WantDAO">
+
+	<!-- 회원정보 조회 -->
+	<select id="selectMember" resultType="com.smhrd.model.Want">
+		<!-- select * from want_info where want_open like '%' and want_gen like 
+			'%' and rep_cate like '%' and want_id like 'want%' and want_name like '%%' 
+			and want_age like '%' -->
+
+		select * from want_info
+		where want_open like #{want_open} and want_gen
+		like #{want_gen} and rep_cate like #{rep_cate}
+		and want_id like
+		#{want_id} and want_name like #{want_name} and want_age like
+		#{want_age}
+	</select>
+
+	<!-- 내용전부가져오기 -->
+	<select id="selectAllList" resultType="com.smhrd.model.Want">
+		select * from want_info
+	</select>
+
+	<!-- 10개씩 조회 -->
+	<!-- <select id="selectAllListPage" resultType="com.smhrd.model.Want" parameterType="int"> 
+		select * from want_info where num >= #{num} order by num desc </select> -->
+
+	<!-- 10개씩 조회 -->
+	<!-- <select id="selectAllListPage" resultType="com.smhrd.model.Want" parameterType="int"> 
+		select * from want_info having count(want_id) >= #{num} group by want_id, 
+		want_name, want_age, want_gen, want_img, rep_cate, admin_adr1, want_open, 
+		want_char, num order by num </select> -->
+
+	<select id="selectAllListPage" resultType="com.smhrd.model.Want"
+		parameterType="int">
+		select * from want_info where num >= #{num} order by num
+	</select>
+
+	<select id="selectOne" parameterType="String"
+		resultType="com.smhrd.model.Want">
+		select * from want_info where want_id = #{want_id}
+	</select>
+
+
+	<!-- 등록하기 -->
+	<insert id="insertWant" parameterType="com.smhrd.model.Want">
+
+		insert into want_info
+		values(#{num}, #{want_id}, #{want_name}, #{want_age},
+		#{want_gen},
+		#{want_img}, #{rep_cate}, #{admin_adr1}, #{want_open},
+		#{want_char})
+	</insert>
+
+	<!-- 정보수정 -->
+	<update id="updateWant" parameterType="com.smhrd.model.Want">
+		update want_info set
+		want_name=#{want_name}, want_age=#{want_age}, want_gen=#{want_gen},
+		rep_cate=#{rep_cate}, want_open=#{want_open}, want_char=#{want_char}
+		where
+		want_id=#{want_id}
+	</update>
+
+	<!-- 일반 사용자 정보 삭제 -->
+	<delete id="deleteWant" parameterType="String">
+		delete from want_info
+		where want_id=#{want_id}
+	</delete>
+</mapper>

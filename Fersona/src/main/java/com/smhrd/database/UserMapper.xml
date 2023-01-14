@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.smhrd.model.UserDAO">
+
+	<!-- 일반 사용자 정보 조회 -->
+	<select id="selectAllMember" resultType="com.smhrd.model.User">
+		select * from mem_info
+	</select>
+	
+	<!-- 일반 사용자 정보 삭제 -->
+	<delete id="deleteMember" parameterType="String">
+		delete from mem_info where mem_id=#{mem_id}
+	</delete>
+	
+	<!-- 일반 사용자 정보 특정 개수만큼만 조회 -->
+	<select id="selectAllListPage" resultType="com.smhrd.model.User" parameterType="int">
+		select * from mem_info where num>=#{num} order by num
+	</select>
+
+</mapper>

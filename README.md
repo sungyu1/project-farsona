@@ -2,7 +2,7 @@
 
 ![main](./images/main.PNG)
 # [주제선정]
-![face](./images/catchface주제선정1.PNG)
+![face](./images/catchface주제선정1.PNG),
 ![face1](./images/catchface 주제선정2.PNG)
 # [개발내용]
 ![face01](./images/catchface개발내용.PNG)

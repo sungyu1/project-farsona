@@ -13,4 +13,4 @@
 ![서비스프로세스1](https://user-images.githubusercontent.com/106080105/212533399-deeb7898-1640-4968-b074-bf155637cf52.PNG)
 
 ## [WEB기능소개]
-
+![web](https://user-images.githubusercontent.com/106080105/212600647-71a96b61-85a3-478b-a4db-bda4929af11e.PNG)

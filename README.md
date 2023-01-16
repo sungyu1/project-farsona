@@ -12,10 +12,5 @@
 ![서비스프로세스](https://user-images.githubusercontent.com/106080105/212533335-d220315a-ffa4-4f8f-9767-3bdb9815dd8e.PNG)
 ![서비스프로세스1](https://user-images.githubusercontent.com/106080105/212533399-deeb7898-1640-4968-b074-bf155637cf52.PNG)
 
-## [App기능소개]
-![APP기능소개](https://user-images.githubusercontent.com/106080105/212533336-cadded74-73c8-4675-9322-4973f05697af.PNG)
-![APP기능소개1](https://user-images.githubusercontent.com/106080105/212533338-f7673f69-a5ff-4d09-8053-c7f16dc25d77.PNG)
-![APP기능소개2](https://user-images.githubusercontent.com/106080105/212533340-c10892a2-8b6a-4641-a38f-0f5f6e08bc84.PNG)
-![APP기능소개3](https://user-images.githubusercontent.com/106080105/212533341-30b43c1d-6d79-4ae8-bc3c-99dc69bb7fab.PNG)
-![APP기능소개4](https://user-images.githubusercontent.com/106080105/212533459-170cc52b-418d-4013-aadd-235161e5a980.PNG)
-![APP기능소개5](https://user-images.githubusercontent.com/106080105/212533342-3a85e130-9b51-4d9b-b415-ae6ced3d0915.PNG)
+## [WEB기능소개]
+
